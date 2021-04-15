@@ -1,0 +1,42 @@
+{
+    "name": "xuan4tt/create-package",
+    "description": "my pagcke",
+    "keywords": [
+        "xuan4tt",
+        "create-package"
+    ],
+    "homepage": "https://github.com/xuan4tt/create-package",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nguyễn Trường Xuân",
+            "email": "xuanntph07568@fpt.edu.vn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xuan4tt\\CreatePackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xuan4tt\\CreatePackage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
